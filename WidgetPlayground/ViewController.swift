@@ -103,7 +103,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UIScrollViewDelega
             // In a real app, you'd perform proper validation here,
             // possibly pinning the certificate or checking specific properties.
             #if DEBUG
-                print("Allowing insecure certificate for development.")``
+                print("Allowing insecure certificate for development.")
                 completionHandler(.useCredential, URLCredential(trust: serverTrust))
             #else
                 print("Rejecting insecure certificate in release build.")
